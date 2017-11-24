@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<title>Allanshanks Farm | Contact & info </title>
+<head>
+<style>
+body {
+	margin: 0px;
+	background:Aliceblue;
+}
+
+.container{ 
+	width: 800px; 
+	height:100%;
+	border-style: solid;
+	border-color: black;
+	border-width:0;
+	margin:auto;
+} 
+    
+ 
+.header{   
+	float:left;
+	height: 100px;
+	width: 100%;  
+	font-size:20px;
+	font-family: "Times New Roman"; 
+	background: white;
+	text-shadow: 2px 2px 4px #000000;
+	color: white;
+	
+	font-size:200%;
+}  
+
+
+a{
+	text-decoration: none; 
+	color:black;
+	font-family: Arial; 	
+}
+
+
+
+.bar{   
+	float: left;
+    left: 0;  
+	height:calc(90%+5px);
+	width: 100%; 
+	background-color: white;
+} 
+
+.header{  
+    background: white; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left top, Aliceblue, white ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, Aliceblue, white ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, Aliceblue, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, Aliceblue, white); /* Standard syntax (must be last) */
+
+} 
+.text{
+	background: white; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left bottom, Aliceblue, white ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top right, Aliceblue, white ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top right, Aliceblue, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top right, Aliceblue, white); /* Standard syntax (must be last) */
+}
+th{
+    border: 1px solid transparent;
+    text-align: center;   
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	 
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%; 
+} 
+.text{  
+	clear: both;
+	float:left;  
+	color: grey;
+}
+p{
+	height:calc(70vw+200px);
+	padding: 20px;
+	font-size : 2vw;
+	padding-top: 0px;
+	
+	
+}
+h2 { 
+	font-family: sans-serif;
+}
+th:hover { 
+	text-shadow: 2px 2px red;
+	
+} 
+footer{  
+	
+	clear:both;
+	background:grey;
+	font-color: blue;
+	bottom:2px;
+	height:35px;
+	
+	
+} 
+#map {
+	height: 300px;
+    width: 100%;
+}
+</style>
+</head>
+<body>
+ 
+<div class='container'>   
+<div class='header'><h3 style='padding-left:20px;'>ALLAN SHANKS FARM</h3></div>
+	<div class='bar'> 
+		<table >
+			<tr>
+				<th><a href=' website.html'  >     HOME</a></th> 
+				<th><a href=' Cafe.html'  >Cafe</a></th> 
+				<th><a href=' farm.html'  >The Farm</a></th>
+			    <th><a href=' shop.html'  >Shop</a></th>
+				<th><a href=' ci.html'style='text-shadow: 4px 4px 8px #000000; color: white;' >Contact & info</a></th>
+			</tr>
+		</table> 
+	</div>
+	</br>
+	<div class='text'> 
+		<h2>OPENING TIMES</h2> 
+			<p>Farm: open 7 days from 10am - 7pm  
+			</br>
+			Cafe: open 7 days from 10am - 5pm  
+			</br>
+			Note: In very bad weather, the field may be closed. We will always state this on our website, Facebook page and telephone message. If in doubt, check before your visit. We are in a rain shadow and can often be dry when there is rain elsewhere in the Borders. See very top of our home page for an excellent weather link for our berry field.
+			</p>
+		<h2>CONTACT US</h2> 
+			<p>
+			Telephone:
+			</br>
+			Email:
+			</br>
+			</p>
+		<h2>FIND US</h2>  
+		<div id="map"></div>
+		<script>
+		function initMap() {
+			var uluru = {lat: 55.6845001, lng:-2.8133298};
+			var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 10,
+			center: uluru
+			});
+			var marker = new google.maps.Marker({
+			position: uluru,
+			map: map
+			});
+		}
+		</script>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6N5YlnBdKhBTyqDsWoZHM_wDu_Vx9IUA&callback=initMap">
+		</script>
+	</div>
+	<footer></footer>
+</div> 
+</body>
+</html>
+
+ 
