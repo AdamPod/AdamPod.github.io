@@ -1,40 +1,28 @@
 <!DOCTYPE html>
 <html>
-<title>Allanshanks Farm | The Farm  </title>
-<head> 
-
-<style> 
+<title>Allanshanks Farm | The Farm  </title>  
+<style>  
 body{
 	background-image: url("field.jpeg");  
-	margin-bottom:0px;
-	padding:0px;
-}
-.container{ 
-	width:800px;
-	height:1500px;
-	border-style: solid;
-	border-color: black;
-	border-width:0;
+	margin:0px; 
+	width:80vw;
 	margin:auto;
 	background:white;
-	box-shadow:0px 0px 10px 5px grey  ; 
-
-} 
-    
- 
-.header{   
+	box-shadow:0px 0px 10px 5px grey  ;   
+    margin-top: 2vh; 
+}      
+header{   
 	float:left;
-	height: calc(120px + 5vw);
-	width: 100%;
-	color: white; 
+	height: 32vw;
+	width: 80vw;  
 	font-size:20px;
-	font-family: "Times New Roman"; 
-	text-shadow: 2px 2px 4px #000000;
-	 
+	font-family: "Times New Roman";   
+    color: white;
+    text-shadow: 2px 2px 4px #c5c9c6; 
 }
-.header,.bar{   
-	background-image: url("chicken-header.jpg"); 
-	background-size:cover;
+header,.bar{   
+	background-image: url("chicken-header.jpg");    
+	background-repeat: no-repeat;
 }
 .bar{   
 	width: 100%; 
@@ -50,27 +38,25 @@ th{
 }
 table {
     font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 80%;
+    border-collapse: collapse; 
 	margin:auto;
 } 
-.left-side{ 
-	float:left; 
+.left-side{  
+    padding:0;
 	width:100%;
 	height:780px; 
 	background:white;
 	
-} 
-.right-side,.activities{
-	box-shadow:0px 0px 10px 5px grey  ;  	
-}
+}  
 th:hover { 
 	text-shadow: 2px 2px red;
 	
 }
-
-th {
-	tex-decoration:none;
+img:hover { 
+	box-shadow: 2px 2px red;
+	
+}
+th { 
 	color: white;
 	text-shadow: 2px 2px 4px #000000;
 	font-family:"Comic Sans MS", cursive, sans-serif;
@@ -80,38 +66,13 @@ th {
 a{
 	text-decoration: none;
 	color:white;
-	font-family: Arial; 		
-} 
-.activities{
-	float:right;
-	width: 30vw; 
-	height:  10vw;
-	border-style: solid; 
-	border-color:purple; 
-	
+	font-family: Arial; 		 
 }
-
- 
-</style>
-</head>
-<body>
-<audio id="myAudio"autoplay>
-  <source src="R.ogg" type="audio/ogg">
-  <source src="R.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-<script>
-var x = document.getElementById("myAudio"); 
-
-function playAudio() { 
-	x.pause();
-    x.play(); 
-} 
-</script> 
-<div class='container'>   
-	<div class='header'><h3 style='padding-left:20px'>ALLAN SHANKS FARM</h3></div>
+</style> 
+<body> 
+	<header><h3 style='padding-left:20px'>ALLAN SHANKS FARM</h3></header>
 	<div class='bar'> 
-		<table >
+		<table aligh="left">
 			<tr>
 				<th><a href=' website.html'  >     HOME</a></th> 
 				<th><a href=' Cafe.html'  >Cafe</a></th> 
@@ -120,35 +81,42 @@ function playAudio() {
 				<th><a href=' ci.html'  >Contact & info</a></th>
 			</tr>
 		</table>
-	</div> 
-	<hr size='5' noshade> 
+	</div>  
 	<div class='left-side' style='color:black'>
 		<h1>Attractions</h1>
 		<table>
 			<tr>
 				<th>
-				<img src="petting.jpg" alt="Paris" width="272" height="246">
+				<img src="petting.jpg" alt="image not displayed" width="270vw" height="180vh">
 				</th>
 				<th>
-				<img src="park.jpg" alt="Paris" width="168" height="94">
+
+				<img src="cow.jpg" alt="image not displayed" width="256" height="180">
 				</th>
 			</tr>
 			<tr>
-				<th>
-				<img src="cow.jpg" alt="image not displayed" width="256" height="192">
-				</th>
-				<th>
+				<td>
+				<img src="park.jpg" alt="image not displayed"  width="264" height="170">
+				</td>
+				<td>
 				<img src="pig.jpg" alt="image not displayed" width="180" height="180"> 
-				</th>
+				</td>
 			</tr>  
-		</table>
-		
-	
+            <tr>
+                <td align="center">
+                <iframe width="100%"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+                </td>
+            </tr>
+		</table> 
+        <br>
+       
 	</div>
+    
 
-</div>
-<footer>footer</footer>
-</br>
+     
+<footer>footer</footer> 
 <i style='vertical-align:bottom'>17CISNSDSL1-0104071(christopher yip)</i>
 </body>
 </html> 
